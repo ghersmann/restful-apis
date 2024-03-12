@@ -1,0 +1,106 @@
+/* Color Mixer 2.0 */
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  background-color: dodgerblue;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  color: white;
+  font-size: 2rem;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  background-color: rgb(27, 27, 27);
+  padding: 1rem 3rem;
+  margin: 0 auto;
+}
+
+.colors {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn-rgb {
+  display: flex;
+  margin-left: auto;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+p {
+  font-size: 1.2rem;
+  color: white;
+  margin-right: 1rem;
+}
+
+button {
+  font-family: inherit;
+  background-color: white;
+  border-radius: 0.5rem;
+  border: 0.2rem solid transparent;
+  height: 2rem;
+  width: 9rem;
+}
+
+button:hover {
+  border: 0.2rem solid lightgray;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 12rem;
+  padding: 0 1rem;
+  /*  slider progress trick  */
+  /* overflow: hidden;
+  border-radius: 1rem; */
+}
+
+input[type="range"]::-moz-range-track {
+  height: 0.5rem;
+  border-radius: 0.5rem;
+}
+.red::-moz-range-track {
+  background: red;
+}
+.blue::-moz-range-track {
+  background: blue;
+}
+.green::-moz-range-track {
+  background: green;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 0.5rem;
+  border-radius: 0.5rem;
+}
+.red::-webkit-slider-runnable-track {
+  background: red;
+}
+.blue::-webkit-slider-runnable-track {
+  background: blue;
+}
+.green::-webkit-slider-runnable-track {
+  background: green;
+}
